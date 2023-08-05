@@ -1,0 +1,435 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:white;
+    
+}
+.header{
+    background-color: black;
+    color: white;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    
+}
+
+
+
+.logo{
+    width: 180px;
+    height: 57px;
+    
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.navbar{
+    height: 57px;
+    
+    margin-left: 100px;
+    
+}
+
+.navbar ul{
+    list-style-type: none;
+
+    
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover{
+    color: black;
+}
+
+.navbar ul li{
+    float: left;
+    margin: 15px 25px;
+    padding:5px 10px;
+    font-size: 18px;
+    /* padding-top: 28px; */
+    
+}
+
+.navbar ul li:hover{
+      background-color: white;
+      border-radius: 5px;
+      color:black;
+      cursor: pointer;
+}
+
+
+.photo{
+    height: 800px;
+    background-color: chocolate;
+    background: url("https://www.ssi-schaefer.com/resource/blob/1076888/b5bdadcababc0904a574ea9d675870c3/e-commerce-hero-dam-image-en-31561--data.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+.detail{
+    width: 550px;
+    /* height: 500px; */
+    /* background-color: cornflowerblue; */
+    padding: 190px 0px 0px 100px;
+    
+    
+}
+
+.big{
+font-size: 90px;
+margin-bottom: 30px;
+color: rgb(22, 18, 18);
+}
+.small{
+    margin-bottom: 35px;
+    line-height: 25px;
+    font-size: 18px;
+    color:rgb(9, 7, 7);
+   border-radius: 5px;
+}
+
+.detail button{
+    padding: 17px 60px;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+
+
+
+.post-1:hover{
+    /* border: 2px solid bisque; */
+    /* background-color:bisque; */
+    box-shadow: 5px 5px 10px gray; 
+    /* transform: scale(1.1); */
+    /* z-index: 2; */
+    
+}
+
+.post-1 img{
+    width: 300px;
+    height: 240px;
+    border-radius: 10px;
+    
+} 
+
+.main{ 
+    /* background-color:bisque;   */
+   /* margin-left: 135px; */
+   /* width: 1200px; */
+   /* height: 1000px; */
+     /* margin:50px auto 0px auto;  */
+   display: flex;
+   flex-flow: wrap;
+   margin: auto;
+   width: 1260px;
+   justify-content: space-between;
+   padding: 20px;
+   margin-top: 50px;
+   
+    
+}  
+
+
+
+.post-1{
+   width: 300px;
+   /* background-color:gainsboro; */
+   /* text-align: center; */
+   padding: 10px; 
+  margin: 20px;
+   border-radius:17px;
+   /* transition: 1s; */
+   /* background-color:bisque; */
+   /* box-shadow: 5px 5px 10px gray; */
+   
+}
+
+.food{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 30px;
+}
+
+/* .search{
+  padding: 20px 0px 0px 30px;
+  
+
+} 
+
+.serchbox{
+   padding: 7px;
+   border-radius: 10px;
+   width: 250px; 
+   /* border: none; */
+/* }  */ 
+
+/* .serchbox:hover{
+ border: 1px solid black;
+} */
+
+.title{
+   text-align: center;
+}
+
+.title h2{
+   font-size: 30px;
+}
+
+.popular{
+   padding: 20px;
+}
+
+
+/* ........................................cart data ........................................*/
+.bestFood{
+    margin: auto;
+    width: 1200px;
+    padding-top: 90px;
+    font-size: 30px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+    font-weight: bold;
+}
+
+
+
+.desc{
+    margin-left: 5px;
+}
+
+.categorys{
+    margin-left: 5px;
+}
+.part-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.part-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+    margin-bottom: 6px;
+}
+
+.desc p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    
+    font-size: 18px;
+}
+
+.ratings p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    /* background-color: green; */
+    padding: 2px 0px 0px 16px;
+    border-radius: 5px;
+    color: rgb(5, 4, 4);
+    font-size: 18px;
+}
+
+.categorys p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: darkgray;
+    font-size: 16px;
+    color:gray;
+}
+
+.pricies p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:gray;
+}
+
+/* .......................search css .....................................*/
+
+.serchbox{
+    margin-top: 16px;
+    margin-left: 80px;
+    padding: 4px 20px; 
+    border-radius: 3px; 
+    border: none;
+    
+}
+
+.searchBtn{
+    padding: 4px 15px;
+    background-color: orangered;
+    color: white;
+    border: none; 
+    border-radius: 3px;  
+} 
+
+
+/* ..........................footer................................... */
+
+.footer{
+    height:500px;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+.div-1{
+     width: 37%;
+     height: 300px;
+     /* background-color: darkgreen; */
+
+}
+
+.div-2{
+    width: 28%;
+    height: 300px;
+    /* background-color: darkgreen; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.div-3{
+    width: 32%;
+    height: 300px;
+    /* background-color: darkgreen; */
+    padding: 0px 0px 0px 45px;
+
+}
+
+.imp{
+    height: 80px;
+    
+    /* background-color: crimson; */
+    display: flex;
+    margin-left: 150px;
+    
+
+}
+
+.brand{
+    width: 200px;
+    height: 100px;
+    /* background-color: blue; */
+    padding-top: 13px;
+}
+
+.brand img{
+    width: 89%;
+    height: 60px;
+    border-radius: 60%;
+    
+
+    
+}
+
+.cakes{
+    width: 390px;
+    height: 80px;
+    /* background-color: orangered; */
+
+    
+}
+.cake{
+    padding-left: 5px;
+    padding-top: 15px;
+    font-size: 40px;
+    color:white;
+}
+
+.advise{
+    font-size: 18px;
+    /* padding: 35px 90px; */
+    padding-top: 30px;
+    padding-left: 145px;
+    line-height: 25px;
+}
+
+.home{
+    width: 200px;
+    /* background-color: blue; */
+}
+
+.home ul{
+    list-style: none;
+    text-align: center;
+    padding-top: 25px;
+
+
+}
+
+.home ul li{
+    line-height: 40px;
+    font-size: 18px;
+
+}
+
+.home p{
+    font-size: 28px;
+    text-align: center;
+    
+}
+
+.quality{
+    width: 200px;
+    /* background-color: blue; */
+}
+
+.quality ul{
+    list-style: none;
+    text-align: center;
+    padding-top: 25px;
+
+
+}
+
+.quality ul li{
+    line-height: 45px;
+    font-size: 18px;
+
+}
+
+.quality p{
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.contactus{
+    font-size: 26px;
+}
+
+.adress{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.number{
+    margin-top: 28px;
+    font-size: 25px;
+}
+

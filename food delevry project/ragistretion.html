@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="registretion.css" />
+
+    <!-- Font awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="img-div">
+        <img
+          src="https://assets.bizclikmedia.net/576/6723707695da8186ae1fec12e6cf0de0:df1611d7f680e1f177da8656acf76080/deliveryheo.PNG"
+        />
+      </div>
+
+      <div class="first">
+        <div>
+          <h1 class="login">Sign up</h1>
+
+          <p class="advise">Please enter your name email and password</p>
+          <input
+            type="text"
+            id="fname"
+            placeholder="please enter name"
+            class="name"
+          /><br /><br /><br />
+          <input
+            type="text"
+            id="email"
+            placeholder="please enter email"
+            class="emails"
+          /><br /><br /><br />
+          <input
+            type="password"
+            id="password"
+            placeholder="please enter password"
+            class="privecy"
+          /><br /><br /><br />
+          <input type="button" id="btn" value="sign up" onclick="saveInfo()" />
+
+          <div class="logo">
+            <!-- <p class="auto">sign up with :</p> -->
+            <div class="siteContainer">
+              <div class="facebookStyle">
+                <i class="fa-brands fa-facebook-f" style="color: #fcfcfd"></i>
+
+                <p>Sign up With Facebook</p>
+              </div>
+
+              <div class="twiteerStyle">
+                <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+                <p>Sign up With twiteer</p>
+              </div>
+
+              <div class="googleStyle">
+                <i class="fa-brands fa-google" style="color: white"></i>
+                <p>Sign up With google</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function saveInfo(){
+      let obj = {
+        name: document.getElementById("fname").value,
+        email: document.getElementById("email").value,
+        password: document.getElementById("password").value,
+      };  
+
+      fetch("https://pear-shy-caterpillar.cyclic.app/api/users/signup", {
+        method: "post",
+        body: JSON.stringify(obj),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then(function (value) {
+          return value.json();
+        })
+        .then(function (value) {
+          console.log(value);
+          alert("signup");
+          window.location.href = "login.html";
+        });
+    }
+  </script>
+</html>
